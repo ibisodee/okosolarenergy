@@ -16,7 +16,7 @@ function Home () {
           </div>
           <div className=''>
               <div className='relative transform transition-all hover:scale-125 hover:rotate-12'>
-                <img className='rounded-md' src='images/banner1.png' alt="About Image" />
+                <img className='rounded-md animate-wiggle' src='images/banner1.png' alt="About Image" />
               </div>
           </div>
         </div>

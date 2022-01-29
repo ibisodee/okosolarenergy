@@ -15,7 +15,7 @@ function Header () {
               <BiMailSend /> <p className='mx-1'>info@okonsolar.com</p>
             </div>
             <div className='inline-flex p-1 sm:grid-cols-2 col-span-2'>
-              <BiPhoneIncoming /><p>+234 803 0000  0000</p>
+              <BiPhoneIncoming /><p>+234 813 242 3336</p>
             </div>
           </div>
         </div>

@@ -3,7 +3,10 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation:{
+        'spin': 'spin 3s linear infinite'},
+    },
     colors: {
       darkblue: '#052447',
       blue: '#063e7d',
@@ -32,12 +35,23 @@ module.exports = {
     },
     animation: {
       marquee: 'marquee 25s linear infinite',
+      wiggle: 'wiggle 1s ease-in-out infinite',
+      spin : 'spin 3s linear infinite',
+      animation: 'spin 1s linear infinite',
     },
     keyframes: {
       marquee: {
         '0%': { transform: 'translateX(0%)' },
         '100%': { transform: 'translateX(-100%)' },
       },
+      wiggle: {
+        '0%, 100%': { transform: 'rotate(-3deg)' },
+        '50%': { transform: 'rotate(3deg)' },
+      },
+      spin: {
+        from : {transform: 'rotate(-3deg)' },
+        to : {transform: 'rotate(360deg)'}
+      }
     },
     screens: {
       'sm': '320px',

@@ -24,17 +24,16 @@ function Contact () {
                 <div className='relative bg-blue rounded-md shadow-md text-white p-5'>
                   <div className='my-2 px-2'>
                     <h2 className='flex text-xl text-yellow'><MdShareLocation />Corporate Offices</h2>
-                    <p className='flex'><MdLocationOn /> Head Office Address: Enugu, Nigeria.</p>
-                    <p className='flex'><MdLocationOn /> Branch Office Address:Lagos, Nigeria</p>
+                    <p className='flex'><MdLocationOn /> Head Office Address: Plot 6 Goshen Avenue Enugu, Nigeria.</p>
                   </div>
-                  <div className='my-2 p-2 pt-5'>
-                    <h2 className='text-xl text-yellow'>Warehouses</h2>
+                  <div className='my-2 p-2 px-5'>
+                    <h2 className='flex text-xl text-yellow'><MdShareLocation />Warehouses</h2>
                     <p className='flex'><MdLocationOn />No 90 Olojo drive, Alaba international market road, Ojo Alaba Lagos Nigeria</p>
                     <p className='flex'><MdLocationOn />Block 24 Shop 16 Jimade Close, Lapido Nigeria.</p>
                   </div>
                   <div className='my-2 p-2'>
                     <h2 className='text-lg text-yellow'>Phone Numbers</h2>
-                    <p className='flex'><MdContactPhone /> <IoLogoWhatsapp/> +234 903 000 0000 </p>
+                    <p className='flex'><MdContactPhone /> +234 813 242 3336 <IoLogoWhatsapp/></p>
                   </div>
                   <div className='my-2 p-2'>
                     <h2 className='text-lg text-yellow'>Email</h2>
@@ -42,7 +41,7 @@ function Contact () {
                   </div>
                   <div className='my-2 p-2'>
                     <h2 className='text-lg text-yellow'>We are Also Active on  </h2>
-                    <p className='flex'><MdFacebook /><IoLogoLinkedin /><IoLogoInstagram /> <IoLogoTwitter />As Okon Solar Energy</p>
+                    <p className='flex justify-items-center '><MdFacebook /><IoLogoLinkedin /><IoLogoInstagram /> <IoLogoTwitter />@Okon Solar Energy</p>
                   </div>
                 </div>
             </div>
@@ -51,27 +50,29 @@ function Contact () {
             <div className='introduction'>
                 <h2 className='font-bold my-2 text-blue text-2xl'>Contact Form</h2>
                 <div>
-                  <div>
-                    <div className='p-2'>
-                      <label className='p-2 font-bold text-darkblue'>Full Name</label>
-                      <input className='rounded-md invalid:border-red bg-milk w-full p-2 shadow-md focus:border-yellow focus:border-2 focus:border-dash' type="text" name="name" />
+                  <form action='https://submit-form.com/jY9RLavb'>
+                    <div>
+                      <div className='p-2'>
+                        <label className='p-2 font-bold text-darkblue'>Full Name</label>
+                        <input className='rounded-md invalid:border-red bg-milk w-full p-2 shadow-md focus:border-yellow focus:border-2 focus:border-dash' type="text" id='name' name="name" required />
+                      </div>
+                      <div className='p-2'>
+                        <label className='p-2 font-bold text-darkblue'>Email Address</label>
+                        <input className='rounded-md invalid:border-red bg-milk w-full p-2 shadow-md focus:border-yellow focus:border-2 focus:border-dash' type="text" id='email' name="email" required />
+                      </div>
+                      <div className='p-2'>
+                        <label className='p-2 font-bold text-darkblue'>Mobile Number</label>
+                        <input className='rounded-md invalid:border-red bg-milk w-full p-2 shadow-md focus:border-yellow focus:border-2 focus:border-dash' type="phone" id='phone' name="phone" required />
+                      </div>
+                      <div className='p-2'>
+                        <label className='p-2 font-bold text-darkblue'>Message or Query</label>
+                        <textarea className='rounded-md invalid:border-red bg-milk w-full p-2 shadow-md focus:border-yellow focus:border-2 focus:border-dash' id='message' name='message' rows={4}> Feel Free to Tell or Ask any Questions </textarea>
+                      </div>
+                      <div className='p-2'>
+                        <button className='rounded-md bg-blue w-full p-2 text-white' type='submit'>Send Message</button>
+                      </div>
                     </div>
-                    <div className='p-2'>
-                      <label className='p-2 font-bold text-darkblue'>Email Address</label>
-                      <input className='rounded-md invalid:border-red bg-milk w-full p-2 shadow-md focus:border-yellow focus:border-2 focus:border-dash' type="text" name="name" />
-                    </div>
-                    <div className='p-2'>
-                      <label className='p-2 font-bold text-darkblue'>Mobile Number</label>
-                      <input className='rounded-md invalid:border-red bg-milk w-full p-2 shadow-md focus:border-yellow focus:border-2 focus:border-dash' type="phone" name="phone" />
-                    </div>
-                    <div className='p-2'>
-                      <label className='p-2 font-bold text-darkblue'>Message or Query</label>
-                      <textarea className='rounded-md invalid:border-red bg-milk w-full p-2 shadow-md focus:border-yellow focus:border-2 focus:border-dash' rows={4}> Feel Free to Tell or Ask any Questions </textarea>
-                    </div>
-                    <div className='p-2'>
-                      <button className='rounded-md bg-blue w-full p-2 text-white'>Send Message</button>
-                    </div>
-                  </div>
+                  </form>
                 </div>
             </div>
           </div>

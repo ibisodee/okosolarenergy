@@ -11,6 +11,8 @@ function Footer () {
   }
   return (
     <div className=''>
+      <div className="elfsight-app-84843a7f-586c-48ea-a0b3-93bda45f40d0"></div>
+      <div className="elfsight-app-94f9ab1f-d37e-4d0e-8fa6-5d9d312f2335"></div>
       <div className=''>
         <div className='w-5/6 max-w-5/6 m-auto overflow-hidden'>
           <div>
@@ -51,13 +53,13 @@ function Footer () {
             <div className='col-start-1 col-span-3'>
                 <img src="images/logo.png" alt='Logo' />
                 <h5 className='font-bold text-yellow'>OKON SOLAR ENERGY</h5>
-                <p>Okon Solar Energy is Proud of Being One of the Top Solar Companies in Nigeria with all Panel produced in Australia.  Over the past 10 Years we have supplied over fifty thousand  number of Solar Panels across the country</p>
+                <p>Okon Solar Energy is Proud of Being One of the Top Solar Companies in Nigeria with all Panel sourced with high Autralian Standard and imported from Australia. Over the past 6 Years we have supplied over thirty thousand  number of Solar Panels across the country</p>
             </div>
             <div className='col-start-4'>
                 <h5 className='text-xl font-bold text-yellow mt-5 mb-5' >Our Contact</h5>
                 <p className='flex mt-0.5 space-x-4'><BiStopwatch className='mr-5'/> MON - FRI 8:30 AM -  6:00 PM</p>
                 <p className='flex mt-0.5 space-x-4'><BiMailSend className='mr-5'/> info@okonsolar.com</p>
-                <p className='flex mt-0.5 space-x-4'><BiPhoneIncoming className='mr-5'/>+234 803 0000  0000</p>
+                <p className='flex mt-0.5 space-x-4'><BiPhoneIncoming className='mr-5'/>+234 813 242 3336</p>
                 <p className='flex mt-0.5  mr-10'> Socialize with Us  <BsMessenger className='mx-1' /><AiFillFacebook className='mx-1'/><AiFillLinkedin className='mx-1'/><AiFillInstagram className='mx-1'/></p>
             </div>
           </div>

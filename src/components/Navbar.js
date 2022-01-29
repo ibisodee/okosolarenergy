@@ -28,7 +28,7 @@ function Navbar () {
                   </ul>
                 </div>
                 <div className='md:text-md sm:text-sm sm:h-auto p-2'>
-                  <Link to='/Quote'><button className='w-5/6 mr-10 sm:text-xs md:text-md p-2 mx-3 bg-yellow text-blue hover:bg-blue hover:animate-pulse hover:text-yellow font-bold rounded-md'>Get Quote</button></Link>
+                  <Link to='/Quote'><button className='w-5/6 animate-pulse mr-10 sm:text-xs md:text-md p-2 mx-3 bg-yellow text-blue hover:bg-blue hover:animate-pulse hover:text-yellow font-bold rounded-md'>Get Quote</button></Link>
                 </div>
                 <div className='md:hidden py-4 px-2 h-5'>
                   <button onClick={ () => { showMobileMenu() } } className='relative z-40'>
@@ -47,7 +47,7 @@ export default Navbar
 
 function MobileMenu () {
   return (
-    <div className='fixed h-screen bg-white ease-in-out top-0 w-2/5 z-10 right-0 rounded-bl-full rounded-tl-full shadow-lg'>
+    <div className='fixed h-screen bg-white top-0 w-2/5 z-10 right-0 rounded-bl-full rounded-tl-full shadow-lg '>
       <ul className='menu-list flex flex-col mt-5 font-bold'>
           <li className='flex text-darkblue mt-20 py-2 px-5 list-none '><Link to='/' className='flex flex-row text-md hover:font-semibold hover:text-blue hover:animate-pulse hover:border-y-2 active:text-darkblue'><FcHome />Home</Link></li>
           <li className='flex text-darkblue py-2 px-5 list-none'><Link to='/About' className='flex flex-row text-md hover:font-semibold hover:text-blue hover:animate-pulse hover:border-y-2'><FcAbout />About</Link></li>
