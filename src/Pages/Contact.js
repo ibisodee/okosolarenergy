@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import emailjs from '@emailjs/browser'
 import { AiOutlineRollback } from 'react-icons/ai'
 import { IoLogoWhatsapp, IoLogoLinkedin, IoLogoInstagram, IoLogoTwitter } from 'react-icons/io'
 import { MdLocationOn, MdShareLocation, MdContactPhone, MdEmail, MdFacebook } from 'react-icons/md'
 
 function Contact () {
+  const form = useRef()
+  const sendEmail = (e) => {
+    e.preventDefault()
+    emailjs.sendForm('service_kx26xlu', 'template_5zwa72p', form.current, 'user_mF0xhc0DRGpuSZvq5gfy3')
+      .then((result) => {
+        console.log(result.text)
+      }, (error) => {
+        console.log(error.text)
+      })
+  }
   return (
     <div>
       <div className='absolute -z-40 md:ml-20 sm:ml-10'>
@@ -50,7 +61,7 @@ function Contact () {
             <div className='introduction'>
                 <h2 className='font-bold my-2 text-blue text-2xl'>Contact Form</h2>
                 <div>
-                  <form action='https://submit-form.com/jY9RLavb'>
+                  <form ref={form} onSubmit={sendEmail} >
                     <div>
                       <div className='p-2'>
                         <label className='p-2 font-bold text-darkblue'>Full Name</label>
@@ -66,10 +77,10 @@ function Contact () {
                       </div>
                       <div className='p-2'>
                         <label className='p-2 font-bold text-darkblue'>Message or Query</label>
-                        <textarea className='rounded-md invalid:border-red bg-milk w-full p-2 shadow-md focus:border-yellow focus:border-2 focus:border-dash' id='message' name='message' rows={4}> Feel Free to Tell or Ask any Questions </textarea>
+                        <textarea className='rounded-md invalid:border-red bg-milk w-full p-2 shadow-md focus:border-yellow focus:border-2 focus:border-dash' id='message' name='message' placeholder='Feel Free to Tell or Ask any Questions' rows={4}>  </textarea>
                       </div>
                       <div className='p-2'>
-                        <button className='rounded-md bg-blue w-full p-2 text-white' type='submit'>Send Message</button>
+                        <input className='rounded-md bg-blue w-full p-2 text-white' type='submit' value='Send Message' />
                       </div>
                     </div>
                   </form>

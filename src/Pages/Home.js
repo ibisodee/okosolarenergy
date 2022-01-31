@@ -5,7 +5,7 @@ import Intro from '../components/Intro'
 
 function Home () {
   return (
-    <div className='overflow-hidden'>
+    <div className='sm:overflow-x-hidden'>
       <img className='absolute -z-40 -mt-20 h-full' src='images/bannerbg.png' alt='' />
       <div className='absolute -z-30 md:right-0 md:top-20 lg:-top-40 sm:top-10 bg-blue sm:-mt-20 md:-mt-20 lg:-mt-40 lg:h-full lg:w-1/2 md:h-1/3 md:w-1/3 sm:h-80 sm:w-80 rounded-lg rotate-45 overflow-hidden'></div>
       <div className='pb-10'>
@@ -16,7 +16,7 @@ function Home () {
           </div>
           <div className=''>
               <div className='relative transform transition-all hover:scale-125 hover:rotate-12'>
-                <img className='rounded-md animate-wiggle' src='images/banner1.png' alt="About Image" />
+                <img className='rounded-md animate-wiggle ' src='images/banner1.png' alt="About Image" />
               </div>
           </div>
         </div>
