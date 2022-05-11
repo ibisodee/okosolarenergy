@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser'
+import Swal from 'sweetalert2'
 import { AiOutlineRollback } from 'react-icons/ai'
 import { IoLogoWhatsapp } from 'react-icons/io'
 import { MdContactPhone, MdEmail } from 'react-icons/md'
@@ -11,6 +12,11 @@ function Quote () {
     emailjs.sendForm('service_kx26xlu', 'template_l3btka4', form.current, 'user_mF0xhc0DRGpuSZvq5gfy3')
       .then((result) => {
         console.log(result.text)
+        Swal.fire(
+          'Thanks for Your Request!',
+          'We Just Received Your Request, One of Our Sales Representative would Get Back to You as Soon as Possible, Cheers!',
+          'primary'
+        )
       }, (error) => {
         console.log(error.text)
       })

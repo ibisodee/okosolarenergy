@@ -16,7 +16,7 @@ function About () {
         <p className='flex text-white'><AiOutlineRollback /> Home</p>
       </div>
       <Intro />
-      <div className='w-3/4 max-w-3/4 text-justify m-auto pb-5' ><p className='mb-5'>Okon Solar Enegy is One of African’s leading trusted suppliers and integrators of renewable energy products. We are an Australian owned and operated company. Okon Solar was formed to help residences and commences overcome the biggest challenges faced because of high electricity/utility bills. Our aim is to help both commercial enterprises and residences access energysaving equipment with minimal fuss. We have been offering complete renewable solutions, tailored to our individual customer requirements.,</p>
+      <div className='w-3/4 max-w-3/4 text-justify m-auto pb-5' ><p className='mb-5'>Okon Solar Enegy is One of African’s leading trusted suppliers and integrators of renewable energy products. We are a Nigerian owned and operated company. Okon Solar was formed to help residences and commences overcome the biggest challenges faced because of high electricity/utility bills. Our aim is to help both commercial enterprises and residences access energysaving equipment with minimal fuss. We have been offering complete renewable solutions, tailored to our individual customer requirements.,</p>
       </div>
       <Subhead />
       <div className='w-3/4 max-w-3/4 m-auto'>

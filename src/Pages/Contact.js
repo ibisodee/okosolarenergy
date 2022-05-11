@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser'
+import Swal from 'sweetalert2'
 import { AiOutlineRollback } from 'react-icons/ai'
 import { IoLogoWhatsapp, IoLogoLinkedin, IoLogoInstagram, IoLogoTwitter } from 'react-icons/io'
 import { MdLocationOn, MdShareLocation, MdContactPhone, MdEmail, MdFacebook } from 'react-icons/md'
@@ -10,7 +11,11 @@ function Contact () {
     e.preventDefault()
     emailjs.sendForm('service_kx26xlu', 'template_5zwa72p', form.current, 'user_mF0xhc0DRGpuSZvq5gfy3')
       .then((result) => {
-        console.log(result.text)
+        Swal.fire(
+          'Thanks for Your Message!',
+          'Your Message has been Sent, We would Get Back to You as Soon as we Can!',
+          'success'
+        )
       }, (error) => {
         console.log(error.text)
       })
